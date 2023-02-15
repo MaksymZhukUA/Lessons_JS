@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task6</title>
+</head>
+<body>
+   <h1>Задача 6</h1>
+   <p>З клавіатури вводяться вартість товару та кількість одиниць 3 товарів.Обчислити вартість кожного товару
+   окремо та загальну вартість.Вивести чек(як у супермаркеті) використовуючи елементи розмітки.</p>
+ 
+   <script>
+   //1.Вводимо необхідні дані
+   
+   let firstGoods = parseFloat(prompt('Ціна 1 товару'))
+   let firstQuantity = parseFloat(prompt('К-сть 1 товару'))
+   let secondGoods = parseFloat(prompt('Ціна 2 товару'))
+   let secondQuantity = parseFloat(prompt('К-сть 2 товару'))
+   let thirdGoods = parseFloat(prompt('Ціна 3 товару'))
+   let thirdQuantity = parseFloat(prompt('К-сть 3 товару'))
+   
+
+   //2. Знаходимо результат
+   
+   let sum1 = firstGoods * firstQuantity
+   let sum2 = secondGoods * secondQuantity
+   let sum3 = thirdGoods * thirdQuantity
+   let sum4 = sum1 + sum2 + sum3
+
+   //3.Виводимо результат
+   
+   document.write(`
+      <table border="3px">
+         <tbody>
+            <tr>
+               <th>Товар</th>
+               <th>Ціна</th>
+               <th>Кількість</th>
+               <th>Сума</th>
+            </tr>
+            <tr>
+               <td>firstGoods</td>
+               <td>${firstGoods}</td>
+               <td>${firstQuantity}</td>
+               <td>${sum1}</td>
+            </tr>
+            <tr>
+               <td>secondGoods</td>
+               <td>${secondGoods}</td>
+               <td>${secondQuantity}</td>
+               <td>${sum2}</td>
+            </tr>
+            <tr>
+               <td>thirdGoods</td>
+               <td>${thirdGoods}</td>
+               <td>${thirdQuantity}</td>
+               <td>${sum3}</td>
+            </tr>
+            <tr>
+               <td>Загальна сума</td>
+               <td></td>
+               <td></td>
+               <td>${sum4}</td>
+            </tr>
+         </tbody>
+      </table>
+   
+   `)
+   
+   </script>
+
+
+
+</body>
+</html>
