@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task7</title>
+</head>
+<body>
+   
+    <h1>Задача 7</h1>
+   <p>7. З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься</p>
+
+   <script>
+
+   //1.Вводимо необхідні дані
+   let month = parseFloat(prompt('Enter number month', '1-12'))
+   
+
+   //2. Знаходимо результат   
+   if (month == 1 || month == 2 || month == 12) {
+      document.write('Winter')
+   }
+   else if (month >= 3 && month <= 5) {
+      document.write('Spring')
+   }
+   else if (month >= 6 && month <= 8) {
+      document.write('Summer')
+   }
+   else if (month >= 9 && month <= 11) {
+      document.write('Autumn')
+   }
+   else {
+      document.write('There is no such month')
+   }
+   //3.Виводимо результат
+
+   
+
+   </script>
+
+   
+   
+   
+   
+
+  
+
+</body>
+</html>
